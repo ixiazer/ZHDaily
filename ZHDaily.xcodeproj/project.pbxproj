@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		170169B21C9AB72B005547C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170169B11C9AB72B005547C6 /* AppDelegate.swift */; };
-		170169B41C9AB72B005547C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170169B31C9AB72B005547C6 /* ViewController.swift */; };
 		170169B71C9AB72B005547C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170169B51C9AB72B005547C6 /* Main.storyboard */; };
 		170169B91C9AB72B005547C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 170169B81C9AB72B005547C6 /* Assets.xcassets */; };
 		170169BC1C9AB72B005547C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170169BA1C9AB72B005547C6 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		176549BC1C9BA3B400EE2B73 /* ZHMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176549BB1C9BA3B400EE2B73 /* ZHMainViewController.swift */; };
 		176549BE1C9BA3C700EE2B73 /* ZFMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176549BD1C9BA3C700EE2B73 /* ZFMenuViewController.swift */; };
 		176549C11C9BA40800EE2B73 /* ZHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176549C01C9BA40800EE2B73 /* ZHHomeViewController.swift */; };
+		176549C41C9BF84000EE2B73 /* ZHBaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176549C31C9BF84000EE2B73 /* ZHBaseConfig.swift */; };
 		E1CC5D515275E50082F478AF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D855CBC2EAC2866E6A08121 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,6 @@
 		0D855CBC2EAC2866E6A08121 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		170169AE1C9AB72B005547C6 /* ZHDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		170169B11C9AB72B005547C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		170169B31C9AB72B005547C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		170169B61C9AB72B005547C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		170169B81C9AB72B005547C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		170169BB1C9AB72B005547C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +57,7 @@
 		176549BB1C9BA3B400EE2B73 /* ZHMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHMainViewController.swift; sourceTree = "<group>"; };
 		176549BD1C9BA3C700EE2B73 /* ZFMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFMenuViewController.swift; sourceTree = "<group>"; };
 		176549C01C9BA40800EE2B73 /* ZHHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHHomeViewController.swift; sourceTree = "<group>"; };
+		176549C31C9BF84000EE2B73 /* ZHBaseConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHBaseConfig.swift; sourceTree = "<group>"; };
 		384F2B1E99F68BE41FD6EC01 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AB87EBBE59B403299B3060FD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,7 +117,6 @@
 				176549B61C9BA2F200EE2B73 /* Components */,
 				176549B51C9BA28600EE2B73 /* ZHMenuSlider */,
 				170169B11C9AB72B005547C6 /* AppDelegate.swift */,
-				170169B31C9AB72B005547C6 /* ViewController.swift */,
 				170169B51C9AB72B005547C6 /* Main.storyboard */,
 				170169B81C9AB72B005547C6 /* Assets.xcassets */,
 				170169BA1C9AB72B005547C6 /* LaunchScreen.storyboard */,
@@ -157,7 +156,9 @@
 		176549B61C9BA2F200EE2B73 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				176549C21C9BF31D00EE2B73 /* category */,
 				176549B91C9BA33E00EE2B73 /* ZHRootViewController.swift */,
+				176549C31C9BF84000EE2B73 /* ZHBaseConfig.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -168,6 +169,13 @@
 				176549C01C9BA40800EE2B73 /* ZHHomeViewController.swift */,
 			);
 			path = ZHHomeVC;
+			sourceTree = "<group>";
+		};
+		176549C21C9BF31D00EE2B73 /* category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 		3D5C34EEB01D285D0BD74CA7 /* Pods */ = {
@@ -369,9 +377,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				170169B41C9AB72B005547C6 /* ViewController.swift in Sources */,
 				176549BE1C9BA3C700EE2B73 /* ZFMenuViewController.swift in Sources */,
 				170169B21C9AB72B005547C6 /* AppDelegate.swift in Sources */,
+				176549C41C9BF84000EE2B73 /* ZHBaseConfig.swift in Sources */,
 				176549BA1C9BA33E00EE2B73 /* ZHRootViewController.swift in Sources */,
 				176549BC1C9BA3B400EE2B73 /* ZHMainViewController.swift in Sources */,
 				176549C11C9BA40800EE2B73 /* ZHHomeViewController.swift in Sources */,

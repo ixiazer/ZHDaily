@@ -9,5 +9,16 @@
 import UIKit
 
 class ZHHomeViewController: ZHRootViewController {
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.view.backgroundColor = UIColor.redColor()
+    }
 }
