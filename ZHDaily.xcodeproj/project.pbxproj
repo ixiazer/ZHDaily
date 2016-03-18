@@ -14,6 +14,10 @@
 		170169BC1C9AB72B005547C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170169BA1C9AB72B005547C6 /* LaunchScreen.storyboard */; };
 		170169C71C9AB72B005547C6 /* ZHDailyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170169C61C9AB72B005547C6 /* ZHDailyTests.swift */; };
 		170169D21C9AB72B005547C6 /* ZHDailyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170169D11C9AB72B005547C6 /* ZHDailyUITests.swift */; };
+		176549BA1C9BA33E00EE2B73 /* ZHRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176549B91C9BA33E00EE2B73 /* ZHRootViewController.swift */; };
+		176549BC1C9BA3B400EE2B73 /* ZHMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176549BB1C9BA3B400EE2B73 /* ZHMainViewController.swift */; };
+		176549BE1C9BA3C700EE2B73 /* ZFMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176549BD1C9BA3C700EE2B73 /* ZFMenuViewController.swift */; };
+		176549C11C9BA40800EE2B73 /* ZHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176549C01C9BA40800EE2B73 /* ZHHomeViewController.swift */; };
 		E1CC5D515275E50082F478AF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D855CBC2EAC2866E6A08121 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +54,10 @@
 		170169D11C9AB72B005547C6 /* ZHDailyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHDailyUITests.swift; sourceTree = "<group>"; };
 		170169D31C9AB72B005547C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		170169DF1C9AB753005547C6 /* ZHDaily-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZHDaily-Bridging-Header.h"; sourceTree = "<group>"; };
+		176549B91C9BA33E00EE2B73 /* ZHRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHRootViewController.swift; sourceTree = "<group>"; };
+		176549BB1C9BA3B400EE2B73 /* ZHMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHMainViewController.swift; sourceTree = "<group>"; };
+		176549BD1C9BA3C700EE2B73 /* ZFMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFMenuViewController.swift; sourceTree = "<group>"; };
+		176549C01C9BA40800EE2B73 /* ZHHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHHomeViewController.swift; sourceTree = "<group>"; };
 		384F2B1E99F68BE41FD6EC01 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AB87EBBE59B403299B3060FD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +113,9 @@
 		170169B01C9AB72B005547C6 /* ZHDaily */ = {
 			isa = PBXGroup;
 			children = (
+				176549BF1C9BA3F500EE2B73 /* ZHHomeVC */,
+				176549B61C9BA2F200EE2B73 /* Components */,
+				176549B51C9BA28600EE2B73 /* ZHMenuSlider */,
 				170169B11C9AB72B005547C6 /* AppDelegate.swift */,
 				170169B31C9AB72B005547C6 /* ViewController.swift */,
 				170169B51C9AB72B005547C6 /* Main.storyboard */,
@@ -132,6 +143,31 @@
 				170169D31C9AB72B005547C6 /* Info.plist */,
 			);
 			path = ZHDailyUITests;
+			sourceTree = "<group>";
+		};
+		176549B51C9BA28600EE2B73 /* ZHMenuSlider */ = {
+			isa = PBXGroup;
+			children = (
+				176549BB1C9BA3B400EE2B73 /* ZHMainViewController.swift */,
+				176549BD1C9BA3C700EE2B73 /* ZFMenuViewController.swift */,
+			);
+			path = ZHMenuSlider;
+			sourceTree = "<group>";
+		};
+		176549B61C9BA2F200EE2B73 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				176549B91C9BA33E00EE2B73 /* ZHRootViewController.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		176549BF1C9BA3F500EE2B73 /* ZHHomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				176549C01C9BA40800EE2B73 /* ZHHomeViewController.swift */,
+			);
+			path = ZHHomeVC;
 			sourceTree = "<group>";
 		};
 		3D5C34EEB01D285D0BD74CA7 /* Pods */ = {
@@ -334,7 +370,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				170169B41C9AB72B005547C6 /* ViewController.swift in Sources */,
+				176549BE1C9BA3C700EE2B73 /* ZFMenuViewController.swift in Sources */,
 				170169B21C9AB72B005547C6 /* AppDelegate.swift in Sources */,
+				176549BA1C9BA33E00EE2B73 /* ZHRootViewController.swift in Sources */,
+				176549BC1C9BA3B400EE2B73 /* ZHMainViewController.swift in Sources */,
+				176549C11C9BA40800EE2B73 /* ZHHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
