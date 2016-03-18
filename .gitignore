@@ -1,0 +1,9 @@
+.git/*
+.DS_Store
+Podfile.lock
+Podfile
+Pods
+xcuserdata
+# xcshareddata
+ZHDaily.xcodeproj/xcshareddata/xcschemes/ZHDaily.xcscheme
+ZHDaily.xcworkspace/xcshareddata/

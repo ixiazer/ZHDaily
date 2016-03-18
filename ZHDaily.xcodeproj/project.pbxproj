@@ -47,6 +47,7 @@
 		170169CD1C9AB72B005547C6 /* ZHDailyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHDailyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		170169D11C9AB72B005547C6 /* ZHDailyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHDailyUITests.swift; sourceTree = "<group>"; };
 		170169D31C9AB72B005547C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		170169DF1C9AB753005547C6 /* ZHDaily-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZHDaily-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +104,7 @@
 				170169B81C9AB72B005547C6 /* Assets.xcassets */,
 				170169BA1C9AB72B005547C6 /* LaunchScreen.storyboard */,
 				170169BD1C9AB72B005547C6 /* Info.plist */,
+				170169DF1C9AB753005547C6 /* ZHDaily-Bridging-Header.h */,
 			);
 			path = ZHDaily;
 			sourceTree = "<group>";
@@ -397,10 +399,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ZHDaily/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.freshfresh.ZHDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZHDaily/ZHDaily-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -408,10 +413,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ZHDaily/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.freshfresh.ZHDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZHDaily/ZHDaily-Bridging-Header.h";
 			};
 			name = Release;
 		};
