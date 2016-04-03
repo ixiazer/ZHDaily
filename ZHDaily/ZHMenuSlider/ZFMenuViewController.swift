@@ -13,6 +13,7 @@ class ZFMenuViewController: ZHRootViewController {
         super.viewDidLoad()
         
         self.view.frame = CGRect(x: 0, y: 0, width: SliderWidthScale*ScreenWidth, height: ScreenHeight)
+        self.view.backgroundColor = UIColor.redColor();
     }
     
     override func viewWillAppear(animated: Bool) {

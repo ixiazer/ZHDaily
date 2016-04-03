@@ -14,4 +14,4 @@ let ScreenHeight:CGFloat = UIScreen.mainScreen().bounds.size.height
 //定义屏幕宽度
 let ScreenWidth:CGFloat =  UIScreen.mainScreen().bounds.size.width
 // slider结构，menu部分占全屏宽度比例
-let SliderWidthScale:CGFloat = 0.45
+let SliderWidthScale:CGFloat = 0.7
